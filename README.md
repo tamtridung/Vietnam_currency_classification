@@ -15,7 +15,14 @@ This project is also suitable for banking application
 - Evaluation: Confusion matrix, Classification report, GramCad
 
 ## Result:
-### Right prediction:
+### Accuracy:
+After fine tunning, model can reach `98.2%` of accuracy. Not a bad result!
+
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/87942072/135127562-4580393c-0c01-4939-93c3-bbdfe04fc9e6.png" />
+</p>
+
+### Right prediction with real images
 <p align="center">
   <img src="https://user-images.githubusercontent.com/87942072/135125969-53043431-e918-430a-8128-ad520da05314.png" />
 </p>
@@ -29,7 +36,7 @@ This project is also suitable for banking application
   <img src="https://user-images.githubusercontent.com/87942072/135126216-9e0c2b36-074b-4ee2-a03d-4c2ecd435f7f.png" />
 </p>
 
-### Wrong prediction:
+### Wrong prediction with real images
 <p align="center">
   <img src="https://user-images.githubusercontent.com/87942072/135126321-e1235ad8-48a3-4c9d-b0dd-da9e863d2f5f.png" />
 </p>
@@ -41,7 +48,12 @@ This project is also suitable for banking application
 ## Next Improvement:
 - Model is not good to recognize class 50000, because images of this class is not good
 - Lack of diversity in data
-- Streaml
+- Streamlit deploy
+- Model still a little bit confusing between 2 classes: 20000 and 500000
+
+<p align="center">
+  <img src="[image](https://user-images.githubusercontent.com/87942072/135128166-03372bbe-2975-431a-80ba-501068627803.png" />
+</p>
 
 
 
