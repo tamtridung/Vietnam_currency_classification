@@ -52,12 +52,8 @@ After fine tunning, model can reach `98.2%` of accuracy. Not a bad result!
 - Model still a little bit confusing between 2 classes: 20000 and 500000
 
 <p align="center">
-  <img src="[image](https://user-images.githubusercontent.com/87942072/135128166-03372bbe-2975-431a-80ba-501068627803.png" />
+  <img src="[image](https://user-images.githubusercontent.com/87942072/135128401-5b616d3a-0aa4-4f6a-b423-a6b40bc57191.png" />
 </p>
-
-
-
-
 
 
 
