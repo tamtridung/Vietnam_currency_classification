@@ -1,62 +1,47 @@
 # VN_currency_classification
 
-## Why is Vietnamese Currency Classification?
-- In order to highlight what i have leant about Deep Learning models
-- Tương lai có thể tạo ra một ứng dụng có thể giúp cho người mù nhận biết được tiền Việt Nam
-- Ứng dụng trong ngân hàng
-## What I have done?
-### Balancing data:
-	- Initial data set with 8 classes, detail are:
-		|class name | files|
-		|-----------|------|
-		|1000 | 90 |
-		|10000 | 170 |
-		|100000 | 66 |
-		|2000 | 211 |
-		|20000 | 218 |
-		|200000 | 242 |
-		|5000 | 276 |
-		|50000 |221 |
-		|500000 | 219 |
+## Description:
+I want to apply the knowledge I have learned about deep learning to help blind people easily recognize money.
+This project is also suitable for banking application
 
-	We can see that our data is imbalancing, the class 1000 and 100000 is quite less file than others classes
-	- I used data augmentation to make dataset more balance. After done it, we have nicer dataset looked like:
-	
-		|class name | files|
-		|1000 | 628 |
-		|10000 | 548 |
-		|100000 | 517 |
-		|2000 | 420 |
-		|20000 | 434 |
-		|200000 | 481 |
-		|5000 | 551 |
-		|50000 |442 |
-		|500000 | 437 |
+<p align="center">
+  <img src="https://www.itourvn.com/images/easyblog_articles/585/vietnamese-banknotes.jpg" />
+</p>
 
-### Using MobileNetV2 to train on data set
+## Technologies and techniques
+- Tensorflow 2.6.0
+- Data augmentation: to make dataset more various
+- Pre-trained model: MobileNetV2
+- Evaluation: Confusion matrix, Classification report, GramCad
 
-	- first training:
-	[In cái hình loss, acc]
-	
-	Yep!!!! Very nice result with above 97.52% accuracy in validation set
-	
-	- Fine tunning:
-	[In cái hình sau khi acc]
-	After fine-tuning the accuracy of our model has increase to `98.2%` at epoch 21st (has improved from 97.2% at first-run).
+## Result:
+### Right prediction:
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/87942072/135125969-53043431-e918-430a-8128-ad520da05314.png" />
+</p>
 
-### Confusion Matrix:
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/87942072/135126074-7df81354-4bf0-42be-8cd6-6c08db37c69e.png" />
+</p>
 
-	[Hình confusion matrix]
-	
-	+ Model is confusing between 2 classes 20000 and 500000 
-	
-	[Hình 20k, vs 50k]
 
-## Prediction on real money
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/87942072/135126216-9e0c2b36-074b-4ee2-a03d-4c2ecd435f7f.png" />
+</p>
+
+### Wrong prediction:
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/87942072/135126321-e1235ad8-48a3-4c9d-b0dd-da9e863d2f5f.png" />
+</p>
+
+<p align="center">
+  <img src="[image](https://user-images.githubusercontent.com/87942072/135126378-96e777c4-c15d-4a98-9332-9f1483cfc00f.png" />
+</p>
 	
-	
-## GramCad
-	 
+## Next Improvement:
+- Model is not good to recognize class 50000, because images of this class is not good
+- Lack of diversity in data
+- Streaml
 
 
 
