@@ -8,6 +8,7 @@
 ### Balancing data:
 	- Initial data set with 8 classes, detail are:
 		|class name | files|
+		|-----------|------|
 		|1000 | 90 |
 		|10000 | 170 |
 		|100000 | 66 |
